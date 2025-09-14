@@ -1,0 +1,19 @@
+---
+description:
+globs: lessons/**/*.md
+---
+
+Purpose: Define a consistent structure for each lesson and maintain uniform writing style and organization across the course. This helps students know what to expect in each lesson and eases navigation and comprehension.
+
+- Lesson Outline: Every lesson should follow a general outline:
+    - Introduction: A brief introduction that outlines what the lesson will cover or achieve. This could be a short paragraph welcoming the student and stating the lesson's objectives or questions that will be answered.
+    - Main Content Sections: The core content divided into logical sections. Each section should cover a sub-topic or step, and ideally have a heading. For example, if the lesson is about a programming concept, sections might include Definition, Examples, Common Pitfalls, Advanced Notes, etc., as relevant.
+    - Examples and Demonstrations: Within the main content, include examples (especially code examples for a programming course) to illustrate the concepts. Each example should be introduced (e.g., "Next, we'll look at an example of X..."), then presented (in a code block if code), and then explained line-by-line or with a summary so the learner fully understands it.
+    - Intermediate Comprehension Checks: For longer lessons, include small comprehension checks or "pause and think" moments within sections to ensure understanding before moving forward. These can be simple questions like "Прежде чем продолжить, попробуйте объяснить себе..." or brief self-assessment tasks.
+    - Practice Tasks/Exercises: After explaining the concepts, provide 3-5 structured practice exercises for the learner. These should be concrete, actionable tasks: "Задание 1: Создайте функцию, которая...", "Задание 2: Измените код так, чтобы...", etc. Include different difficulty levels (базовый, средний, продвинутый) to accommodate different learners. Provide clear instructions and expected outcomes for each task.
+    - Control Questions: Include 3-5 control questions with hidden answers (using <details> tags) to test comprehension of key concepts from the lesson.
+    - Summary/Conclusion: MANDATORY - End every lesson with a clear summary section that includes: (1) Brief recap of what was learned in 3-4 bullet points, (2) How this connects to previous lessons, (3) Clear transition statement about what the next lesson will cover, (4) Encouraging message about progress made.
+- Consistency Across Lessons: All lessons should have a similar structure as above so the course feels coherent. For instance, if Lesson 1 starts with an introduction and ends with a summary and exercises, Lesson 2 should do the same. Of course, the content differs, but the format is consistent.
+- Navigation and References: If the course content references earlier lessons or modules, make sure to clearly reference them (e.g., “As we saw in Lesson 2...”) so that students recall prior knowledge. Conversely, avoid heavy dependencies on future content (don’t assume the student knows something that is taught in a later lesson; if needed, give a brief explanation or a note that it will be covered later).
+- Avoid Redundancy: While reviewing previous concepts is good, avoid simply repeating entire explanations from earlier lessons. Instead, summarize briefly and then expand. This keeps content lean and avoids boring the learner with duplicate text.
+- Length and Pacing: Try to keep each lesson at a digestible length. If a lesson draft becomes very long or tries to cover too many topics, consider splitting it into two lessons or into sub-sections. A good rule of thumb is that a single lesson should cover one main concept or a cohesive set of skills. This ties into the principle of modular learning (see Rule 4) to give students a sense of progress.

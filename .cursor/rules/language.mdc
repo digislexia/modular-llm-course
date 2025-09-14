@@ -1,0 +1,13 @@
+---
+description:
+globs: lessons/**/*.md
+---
+
+Purpose: Enforce that all course content is written in Russian, even if we draft or prompt in English. This rule ensures consistency in language and tone across the course.
+
+- Language: All instructional text, explanations, and comments in lesson files must be in Russian. If the AI drafts content in English, it should be translated to Russian before finalizing.
+- Tone: Use a consistent, learner-friendly tone in Russian. Prefer the polite form “вы” when addressing the learner (unless a different style was decided) to maintain professionalism. Alternatively, maintain an impersonal instructional tone if that fits the course better. The key is to be consistent throughout the course.
+- Terminology: Use Russian terminology for technical terms whenever appropriate. For example, use “функция” instead of “function”, “цикл” for “loop”, “массив” for “array”, etc. If an English term has no good translation or is commonly used as-is (e.g. names of libraries, frameworks), provide a brief explanation in Russian so the student understands the term. Avoid untranslated English jargon in the content unless necessary, and if used, explain it.
+- Clarity and Accuracy: Ensure the Russian text is clear and grammatically correct. Avoid overly complex sentences – it's better to split long thoughts into simpler sentences for clarity. If the source material or planning was in English, double-check that no English remnants (like untranslated phrases) remain in the lesson content.
+- Examples and Analogies: All examples, analogies, and metaphors must be meaningful and relevant in Russian context. Avoid direct translations that don't make sense (e.g., "банк реки" is not a meaningful expression in Russian). Use examples that Russian speakers would naturally understand and relate to their experience.
+- Code and Comments: If code examples include comments or output messages, those too should be in Russian (unless the context demands English, such as a specific keyword or function name). This keeps the learning experience fully in Russian.

@@ -1,0 +1,36 @@
+---
+description:
+globs: lessons/**/*.md
+---
+
+Purpose: Ensure all technical content, code examples, and API integrations are accurate, up-to-date, and functional. This rule prevents students from encountering broken code or outdated information.
+
+- API Documentation Compliance: All API calls and examples must follow current official documentation. For example:
+  - OpenRouter API: Use correct parameter names and formats (e.g., "usage": {"include": true} for usage accounting)
+  - OpenAI API: Use current model names and parameters
+  - Check documentation URLs and ensure they are accessible and current
+
+- Runnable Code: All code examples should be complete and executable. Students should be able to copy-paste code and run it successfully with minimal setup. Include:
+  - All necessary imports and dependencies
+  - Proper error handling for common scenarios
+  - Clear setup instructions (environment variables, API keys, etc.)
+  - Working examples with expected outputs
+
+- Version Compatibility: Specify versions for libraries and frameworks when relevant. Avoid using deprecated methods or parameters. When possible, use stable, well-supported versions.
+
+- Testing Requirements: Before finalizing lessons, verify that:
+  - All code examples run without errors
+  - API calls return expected responses
+  - Links and references are accessible
+  - File paths and directory structures are correct
+
+- Current Information: Technical information should be as current as possible. Avoid outdated statistics, old model names, or discontinued services. When referencing external tools or platforms, verify they are still active and accessible.
+
+- Error Scenarios: Include common error handling scenarios and their solutions:
+  - Invalid API keys
+  - Network timeouts
+  - Rate limiting
+  - Missing dependencies
+  - Common setup mistakes
+
+This ensures students have a smooth, frustration-free learning experience with working examples they can build upon.

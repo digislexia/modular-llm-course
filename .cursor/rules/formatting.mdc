@@ -1,0 +1,24 @@
+---
+description:
+globs: lessons/**/*.md
+---
+
+Purpose: Ensure that all course content files follow proper Markdown formatting, include well-formatted code snippets, and are easy to read. The goal is to make the content clean, consistent, and friendly for learners to read (and for us to maintain).
+
+- Headings and Structure: Use Markdown headings to create a logical structure. For example, each lesson file might start with a top-level heading (e.g. # Lesson Title), and sections within the lesson use secondary or tertiary headings (##, ###, etc.) as needed. Do not skip heading levels arbitrarily. A clear hierarchy helps learners navigate the content easily.
+- Paragraphs: Keep paragraphs short (ideally 3-5 sentences). Long blocks of text should be broken into smaller paragraphs or bullet lists. This improves readability and keeps students engaged. Each paragraph should focus on a single idea or step to avoid overwhelming the reader.
+- Lists for Key Points: Use bullet points or numbered lists to present key ideas, steps, or summaries. For example, if explaining a sequence of actions or a list of best practices, format them as a list. This makes it easier to scan and remember.
+- Inline Formatting: Use inline code formatting (`code`) for short code expressions or filenames mentioned in text, bold or italic for emphasis when necessary, and quotations or blockquotes for quoted definitions or important notes. Keep formatting consistent (e.g., don't sometimes bold and sometimes italicize for the same purpose).
+- Code Blocks: All code examples, commands, or console outputs should be placed in fenced code blocks (triple backticks). Specify the language for syntax highlighting when possible (for instance, use python for Python code, bash for shell commands, etc.). Ensure that code blocks are properly separated from the surrounding text with blank lines for clarity.
+Example:
+```python
+def example_function(x):
+print(x) # Выводим значение x на экран
+```
+- Code Snippet Clarity: Within code blocks, ensure the code is properly formatted and indented. Include comments in code (in Russian) if explaining what specific lines do, so learners can understand the code. If showing a command-line interaction, you can include both the command and its output in separate code blocks or indicate the output after the command.
+- Technical Accuracy: All code examples must be technically correct and complete. API calls should use current, documented parameters (e.g., for OpenRouter API, use proper "usage": {"include": true} format). Ensure all imports, dependencies, and setup steps are included. Code should be runnable without modification when students copy it.
+- Complete Code Examples: Avoid truncated or incomplete code snippets that end with "# Установка промпта..." or similar placeholders. Every code example should be either complete and functional, or clearly marked as a partial example with explanation of what's missing.
+- Images and Diagrams: (Optional) If a concept can be better explained with an image or diagram and it's feasible to include, use Markdown image syntax. Provide an alt text in Russian describing the image. (We will not focus on finding images now, but the rule allows for adding visuals later if needed.)
+- No HTML in Markdown: Stick to pure Markdown for formatting; avoid raw HTML tags in the lesson files for portability.
+- Consistency: Ensure the formatting style is consistent across all lessons (for example, if we decide on a particular way to present tips or notes, do it the same way in each lesson). If using special callouts or admonitions for "Note", "Tip", etc., keep their style uniform throughout the course.
+- Exercise Formatting: Format practice exercises clearly with numbered headings (### Практические задания), use emojis to indicate difficulty levels (🟢 Базовый, 🟡 Средний, 🔴 Продвинутый), and provide clear task descriptions with expected outcomes. Use consistent formatting for "Проверьте себя" moments throughout lessons.

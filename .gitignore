@@ -1,0 +1,81 @@
+# Environment variables (содержат API ключи)
+.env
+*.env
+.env.local
+.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+llm_env/
+llm_course_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Chat history files (могут содержать персональную информацию)
+chat_history_*.json
+conversation_*.json
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Project specific
+examples/
+test_outputs/
+user_projects/
+
+# Node modules (if needed in the future)
+node_modules/
+
+# API responses cache
+*.cache
+api_cache/
