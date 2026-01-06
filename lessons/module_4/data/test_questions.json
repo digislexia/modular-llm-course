@@ -1,0 +1,151 @@
+{
+  "description": "Тестовые вопросы для оценки качества RAG-системы",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Как создать список в Python?",
+      "expected_answer": "Списки создаются с помощью квадратных скобок: my_list = [1, 2, 3]",
+      "relevant_docs": [1],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "question": "Какие методы есть у словарей в Python?",
+      "expected_answer": "keys() для получения ключей, values() для значений, items() для пар ключ-значение, get() для безопасного доступа",
+      "relevant_docs": [2],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "question": "Что такое lambda-функции?",
+      "expected_answer": "Lambda-функции — это анонимные функции, создаваемые выражением lambda x: x * 2",
+      "relevant_docs": [3],
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "question": "Как работает наследование в Python?",
+      "expected_answer": "Наследование создаётся указанием родительского класса в скобках: class Child(Parent)",
+      "relevant_docs": [4],
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "question": "Как обрабатывать исключения в Python?",
+      "expected_answer": "Используется конструкция try-except. Блок finally выполняется всегда, блок else — если исключения не было",
+      "relevant_docs": [5],
+      "difficulty": "medium"
+    },
+    {
+      "id": 6,
+      "question": "Как правильно работать с файлами в Python?",
+      "expected_answer": "Рекомендуется использовать контекстный менеджер: with open('file.txt', 'r') as f:",
+      "relevant_docs": [6],
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "question": "Что такое декораторы в Python?",
+      "expected_answer": "Декораторы — это функции, модифицирующие поведение других функций. Используются с синтаксисом @decorator",
+      "relevant_docs": [8],
+      "difficulty": "medium"
+    },
+    {
+      "id": 8,
+      "question": "В чём преимущество генераторов перед списками?",
+      "expected_answer": "Генераторы экономят память, так как вычисляют значения по требованию (lazy evaluation)",
+      "relevant_docs": [9],
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "question": "Когда использовать асинхронное программирование?",
+      "expected_answer": "Асинхронность полезна для I/O-bound операций: сетевые запросы, работа с базами данных. Для CPU-bound лучше multiprocessing",
+      "relevant_docs": [10],
+      "difficulty": "hard"
+    },
+    {
+      "id": 10,
+      "question": "Какие типы машинного обучения существуют?",
+      "expected_answer": "Три типа: supervised learning (с учителем), unsupervised learning (без учителя), reinforcement learning (с подкреплением)",
+      "relevant_docs": [11],
+      "difficulty": "easy"
+    },
+    {
+      "id": 11,
+      "question": "Что такое механизм self-attention в трансформерах?",
+      "expected_answer": "Self-attention позволяет учитывать контекст всей последовательности при обработке каждого элемента",
+      "relevant_docs": [13],
+      "difficulty": "hard"
+    },
+    {
+      "id": 12,
+      "question": "Что такое промпт-инжиниринг?",
+      "expected_answer": "Промпт-инжиниринг — искусство формулирования запросов к LLM для получения качественных ответов",
+      "relevant_docs": [15],
+      "difficulty": "easy"
+    },
+    {
+      "id": 13,
+      "question": "Из каких компонентов состоит RAG?",
+      "expected_answer": "RAG состоит из retriever (находит релевантные документы) и generator (LLM, генерирующая ответ)",
+      "relevant_docs": [16],
+      "difficulty": "easy"
+    },
+    {
+      "id": 14,
+      "question": "Что такое эмбеддинги и зачем они нужны?",
+      "expected_answer": "Эмбеддинги — векторные представления текста, где похожие по смыслу тексты имеют близкие векторы. Нужны для семантического поиска",
+      "relevant_docs": [17],
+      "difficulty": "medium"
+    },
+    {
+      "id": 15,
+      "question": "Какой оптимальный размер чанка для RAG?",
+      "expected_answer": "Оптимальный размер: 200-500 токенов с overlap 50-100",
+      "relevant_docs": [19],
+      "difficulty": "hard"
+    },
+    {
+      "id": 16,
+      "question": "Как оценить качество RAG-системы?",
+      "expected_answer": "Метрики: Retrieval Relevance, Answer Faithfulness, Answer Relevance. Можно использовать RAGAS или LLM-as-judge",
+      "relevant_docs": [20],
+      "difficulty": "hard"
+    },
+    {
+      "id": 17,
+      "question": "Чем отличается BERT от GPT?",
+      "expected_answer": "BERT использует только энкодер трансформера, GPT — только декодер",
+      "relevant_docs": [13],
+      "difficulty": "hard"
+    },
+    {
+      "id": 18,
+      "question": "Что такое галлюцинации LLM и как RAG помогает с ними?",
+      "expected_answer": "Галлюцинации — уверенная генерация неправдивой информации. RAG уменьшает их, предоставляя модели релевантный контекст из проверенных источников",
+      "relevant_docs": [14, 16],
+      "difficulty": "medium"
+    },
+    {
+      "id": 19,
+      "question": "Какие векторные базы данных можно использовать для RAG?",
+      "expected_answer": "Pinecone, Weaviate, Qdrant, Chroma, FAISS",
+      "relevant_docs": [18],
+      "difficulty": "easy"
+    },
+    {
+      "id": 20,
+      "question": "Что такое chain-of-thought prompting?",
+      "expected_answer": "Chain-of-thought — техника промпт-инжиниринга с пошаговым рассуждением",
+      "relevant_docs": [15],
+      "difficulty": "medium"
+    }
+  ],
+  "evaluation_criteria": {
+    "retrieval_success": "Найдены ли релевантные документы из списка relevant_docs",
+    "answer_correctness": "Содержит ли ответ ключевую информацию из expected_answer",
+    "answer_faithfulness": "Основан ли ответ на найденных документах, а не на выдуманных фактах"
+  }
+}
+
